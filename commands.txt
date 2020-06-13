@@ -1,0 +1,28 @@
+python train.py --dataset csv --csv_train data/train_annots.csv  --csv_classes data/class_list.csv  --csv_val data/val_annots.csv
+
+
+python train.py --dataset csv --csv_train data/train_annots.csv  --csv_classes data/class_list.csv  --csv_val data/val_annots.csv --depth 152
+
+
+python visualize.py --dataset csv --csv_classes data/class_list.csv  --csv_val data/val_annots.csv --model model_final.pt
+
+
+python train.py --dataset csv --csv_train data/train_annots_new.csv  --csv_classes data/class_list.csv  --csv_val data/val_annots.csv --depth 152
+
+python visualize.py --dataset csv --csv_classes data/class_list.csv  --csv_val data/val_annots_new.csv --model signature_models/csv_retinanet_15.pt
+
+W2_Dataset
+==========
+python train.py --dataset csv --csv_train data/w2/train_annots.csv  --csv_classes data/w2/class_list.csv  --csv_val data/w2/val_annots.csv --depth 152
+
+python visualize.py --dataset csv --csv_classes data/w2/class_list.csv  --csv_val data/w2/val_annots.csv --model w2_models/csv_retinanet_67.pt
+
+
+marimot_Dataset
+==============
+python train.py --dataset csv --csv_train data/marimot/train_annots.csv  --csv_classes data/marimot/class_list.csv  --csv_val data/marimot/val_annots.csv --depth 152
+
+python visualize.py --dataset csv --csv_classes data/marimot/class_list.csv  --csv_val data/marimot/val_annots.csv --model table_models/csv_retinanet_20.pt
+
+
+

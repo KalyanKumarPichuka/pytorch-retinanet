@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/kalyan/anaconda3/envs/pytorch-retinanet/bin/python",
+    "git.ignoreLimitWarning": true
+}
