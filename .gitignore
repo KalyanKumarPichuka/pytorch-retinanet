@@ -98,9 +98,11 @@ ENV/
 
 # mypy
 .mypy_cache/
-
 *.zip
 *.pt
+
+#Visual studio code
+.vscode
 
 #retinanet paths and other folder paths
 resnet50-19c8e357.pth
@@ -109,6 +111,7 @@ data
 signature_models
 table_models
 w2_models
+
 
 
 
