@@ -101,8 +101,8 @@ ENV/
 *.zip
 *.pt
 
-#Visual studio code
-.vscode
+# Visual studio code
+.vscode/
 
 #retinanet paths and other folder paths
 resnet50-19c8e357.pth
